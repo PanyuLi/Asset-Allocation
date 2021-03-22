@@ -440,7 +440,7 @@ def draw_plot2(df, isshow=True):
         
 if __name__ == '__main__':
     equity = ['沪深300', 'SPX', '日经225', '德国DAX', '英国富时100', '美元指数', 'BCOMEN', 'BCOMIN']
-    return_df = pd.read_excel(r'data/数据汇总1.0.xlsx', index_col=0)
+    return_df = pd.read_excel(r'data/candidate_asset.xlsx', index_col=0)
     return_df = return_df[:'2019']
     vix_df = pd.read_csv(r'data/VIX_SHORT_INDEX.csv', index_col=1)
     vix_df.index = pd.to_datetime(vix_df.index)
